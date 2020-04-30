@@ -1,0 +1,36 @@
+<!document html>
+<html>
+	<head>
+		<title>Bai giang Javasc</title>
+		<style>
+			#hide{
+				margin: 10px;
+				padding: 25px;
+				background:teal;
+				color: while;
+				display: none;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<input type="button" value="Bật" onclick="hien()"/></input>
+		<input type="button" value="Tắt" onclick="an()"/></input>
+		
+		<div id= "hide">
+			Nội dung sẽ ẩn hoặc hiện khi Click nút Button.
+		</div>
+		
+		<script>
+			function hien(){
+				document.getElementById("hide").style.display="block";
+			}
+			
+			function an(){
+				document.getElementById("hide").style.display="none";
+			}
+		
+		</script>
+	</body>
+</html>

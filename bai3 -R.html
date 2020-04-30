@@ -1,0 +1,56 @@
+<!document html>
+<html>
+	<head>
+		<title>JavaSc: Biến số</title>
+		<style>
+			#ketqua{
+				margin:10px;
+				padding:35px;
+				background: #9B051A;
+				color: white;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<input type="text" id="soa"></input>
+		<input type="text" id="sob"></input>
+			
+		<div align="center" id="ketqua"><b>BẤM PHÉP TOÁN CẦN THỰC HIỆN</b></div> 
+		
+		<div align="center">
+			<input type="button" value="Phép Cộng" onClick="cong()"> </input>
+			<input type="button" value="Phép Trừ" onClick="tru()"> </input>
+			<input type="button" value="Phép Chia" onClick="chia()"> </input>
+			<input type="button" value="Phép Nhân" onClick="nhan()"> </input>
+		</div>	
+		<script>
+			function cong(){
+				var a = document.getElementById("soa").value;
+				var b = document.getElementById("sob").value;
+				c = parseInt(a) + parseInt(b);
+				document.getElementById("ketqua").innerHTML = a + " + " + b + " = " + c;
+			}
+			function tru(){
+				var a = document.getElementById("soa").value;
+				var b = document.getElementById("sob").value;
+				c = parseInt(a) - parseInt(b);
+				document.getElementById("ketqua").innerHTML = a + " - " + b + " = " + c;
+			}
+			function chia(){
+				var a = document.getElementById("soa").value;
+				var b = document.getElementById("sob").value;
+				c = parseInt(a) / parseInt(b);
+				document.getElementById("ketqua").innerHTML = a + " / " + b + " = " + c;
+			}
+				function nhan(){
+				var a = document.getElementById("soa").value;
+				var b = document.getElementById("sob").value;
+				c = parseInt(a) * parseInt(b);
+				document.getElementById("ketqua").innerHTML = a + " * " + b + " = " + c;
+			}
+		</script>
+		
+	</body>
+</html>

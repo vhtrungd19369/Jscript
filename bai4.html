@@ -1,0 +1,65 @@
+<html>
+
+	<head>
+		<title>Javasc ĐIẾM NGƯỢC</title>
+		<style> 
+			#donghoam{
+				margin:2px;
+				background-color:#585858;
+				fontt-size:100px;
+				font-weigh:bold;
+				color:red;
+			}
+			#donghoduong{
+				margin:2px;
+				background-color:07A97B;
+				fontt-size:100em;
+				font-weigh:bold;
+				color:yellow;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<b>ĐẾM NGƯỢC:</b><br>
+		<div align="right" id="donghoam"></div>
+		<script>
+			var atru =20;
+			function demnguoc(){
+				atru--;
+				if(atru !=0){
+					document.getElementById("donghoam").innerHTML=atru;
+					setTimeout("demnguoc()",1000);
+				}else{
+					//document.getElementById("dongho").innerHTML="Het thoi gian";
+					window.location.href="file:///D:/Desktop/W-all/thanhdo/bai4.html";
+				}
+			
+			}demnguoc();
+		</script>
+				<BR><BR>
+		<b>ĐẾM TỚI:</b><br>		
+		<div align="left" id="donghoduong"></div>
+		<script>
+			var acong=0;
+			function demtang(){
+				acong++;
+				if(acong !=10){
+					document.getElementById("donghoduong").innerHTML=acong;
+					setTimeout("demtang()",10000);				
+				}else{
+					window.location.href="file:///D:/Desktop/W-all/thanhdo/bai4.html";
+				}
+			}demtang();
+		
+		</script>
+		
+	
+		
+		
+	
+	</body>
+
+
+
+</html>

@@ -1,0 +1,75 @@
+<!document html>
+<html>
+	<head>
+		<title>JavaSc: Biến số</title>
+		<style>
+			#ketqua{
+				margin:50px;
+				padding:35px;
+				background:#77D7E2;
+				color: red;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<div align="center">
+			<h1>Máy tính cua tao lam</h1>
+		
+			<div>
+				<b>Nhập số:</b>
+				<input type="text" id="soa"></input>
+			</div><br>
+			
+			<div>
+				<b>Nhập số:</b>
+				<input type="text" id="sob"></input>
+			</div><br>
+			<a href="file:///D:/Desktop/W-all/thanhdo/bai3.html">TRỞ LẠI TỪ ĐẦU</a>
+		</div>
+		
+		<div align="center" id="ketqua"><b>BẤM PHÉP TOÁN CẦN THỰC HIỆN</b></div>		
+		<div align="center">
+			<input type="button" value="|          phép toán CỘNG          |" onClick="cong()"> </input>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" value="|          phép toán TRỪ           |" onClick="tru()"> </input><br><br>
+			<input type="button" value="|          phép toán CHIA          |" onClick="chia()"> </input>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" value="|          phép toán NHÂN          |" onClick="nhan()"/>
+		</div>
+		
+		<script>
+			function cong(){
+				var a = document.getElementById("soa").value;
+				var b = document.getElementById("sob").value;
+				c = parseInt(a) + parseInt(b);
+				document.getElementById("ketqua").innerHTML = a + " + " + b + " = " + c;
+			}
+			function tru(){
+				var a = document.getElementById("soa").value;
+				var b = document.getElementById("sob").value;
+				c = parseInt(a) - parseInt(b);
+				document.getElementById("ketqua").innerHTML = a + " - " + b + " = " + c;
+			}
+			function chia(){
+				var a = document.getElementById("soa").value;
+				var b = document.getElementById("sob").value;
+				c = parseInt(a) / parseInt(b);
+				document.getElementById("ketqua").innerHTML = a + " / " + b + " = " + c;
+			}
+			function nhan(){
+				var a = document.getElementById("soa").value;
+				var b = document.getElementById("sob").value;
+				c = parseInt(a) * parseInt(b);
+				document.getElementById("ketqua").innerHTML = a + " * " + b + " = " + c;
+			}
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JAVASC: QUẢNG CÁO</title>
+		<style>
+			#mainqc{
+				position:fixed;
+				right:30px;
+				bottom:10px;
+				width: 400px;
+			}
+			
+			#tatqc, #moqc{
+				width:100%;
+				padding:10px;
+				background:#14AE83;
+				text-align:right;
+			}
+			
+			#moqc{
+				display:none;
+			}
+			a {
+				color:white;
+				text-decoration:none;
+			}
+			a:hover{
+				text-decoration:underline;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="mainqc">
+			<div id="tatqc">
+				<a href="#" onclick="hide()">Tắt quảng cáo</a>
+			</div>
+			
+			<div id="picqc">
+				<a href="https://www.facebook.com/butvitamin19639/" target="_blank">
+					<img src="fbtrung.jpg" width="400px" height="600px" alt=""/>
+				</a>
+			</div>
+
+			<div id="moqc"> 
+				<a href="#" onclick="show()">Mở quảng cáo</a>
+			</div>
+		</div>
+		<script>
+		function show(){
+				document.getElementById("tatqc").style.display="block";
+				document.getElementById("picqc").style.display="block";
+				document.getElementById("moqc").style.display="none";
+			}
+			function hide(){
+				document.getElementById("tatqc").style.display="none";
+				document.getElementById("picqc").style.display="none";
+				document.getElementById("moqc").style.display="block";
+			}
+		</script>
+
+	</body>
+</html>
